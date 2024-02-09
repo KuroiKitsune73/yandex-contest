@@ -1,5 +1,6 @@
 # yandex-contest
 Warm-up-2023
+
 **Task 1.Not at least on the segment**
 
 Time limit: 1 second
