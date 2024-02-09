@@ -4,9 +4,13 @@ Warm-up-2023
 **Task 1.Not at least on the segment**
 
 Time limit: 1 second
+
 Memory limit: 64Mb
+
 Input: standard input or input.txt
+
 Output: standard output or output.txt
+
 
 A sequence of integers a1, a2, ..., an is given.
 Queries are defined: to report any element of the sequence in the range from L to R, **inclusive**,
