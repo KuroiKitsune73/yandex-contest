@@ -25,17 +25,28 @@ except for the minimum. If such an element does not exist, output "NOT FOUND".
 **Example**
 Input:
 10 5
+
 1 1 1 2 2 2 3 3 3 10
+
 0 1
+
 0 3
+
 3 4
+
 7 9
+
 3 7
 Output:
+
 NOT FOUND
+
 2
+
 NOT FOUND
+
 10
+
 3
 
 *All test cases passed.*
