@@ -29,6 +29,7 @@ except for the minimum. If such an element does not exist, output "NOT FOUND".
 
 **Example**
 Input:
+
 10 5
 
 1 1 1 2 2 2 3 3 3 10
@@ -56,7 +57,9 @@ NOT FOUND
 3
 
 *All test cases passed.*
+
 *Time: 299ms*
+
 *Memory: 28.32 Mb*
 
 In the first line, we read two integers, n and m.
