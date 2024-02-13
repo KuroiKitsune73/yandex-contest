@@ -30,19 +30,19 @@ except for the minimum. If such an element does not exist, output "NOT FOUND".
 **Example**
 Input:
 
-10 5
+10  5
 
-1 1 1 2 2 2 3 3 3 10
+1  1  1  2  2  2   3  3  3  10
 
-0 1
+0  1
 
-0 3
+0  3
 
-3 4
+3  4
 
-7 9
+7  9
 
-3 7
+3  7
 
 Output:
 
@@ -89,11 +89,11 @@ The program should output two natural numbers m and n such that m/n=a/b+c/d and 
 **Example**
 Input:
 
-1 2 1 2
+1  2  1  2
 
 Output:
 
-1 1
+1  1
 
 *All test cases passed.*
 
