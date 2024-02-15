@@ -1,7 +1,7 @@
 # yandex-contest
 Warm-up-2023
 
-**Task 1.Not at least on the segment**
+**Task A.Not at least on the segment**
 
 Time limit: 1 second
 
@@ -68,7 +68,7 @@ In the second line, we read the sequence itself. Then, we list m queries in the 
 For each query, we output any element in the range [ L, R ], except for the minimum.
 If such an element does not exist, we output "NOT FOUND".
 
-**Task 2.Add Two Fractions**
+**Task B.Add Two Fractions**
 
 Time limit: 1 second
 
@@ -108,3 +108,45 @@ We then find the greatest common divisor of the numerator and denominator using 
 
 Next, we read the input numbers into an array and assign each value to the variables a, b, c, and d.
 We then call the add_fractions function, and the resulting numerator and denominator are printed to the screen.
+
+**Task D.Anagrams?**
+
+Time limit: 1 second
+
+Memory limit: 64Mb
+
+Input: standard input or input.txt
+
+Output: standard output or output.txt
+
+Given two strings, check if one string is an anagram of another. An anagram of a string is formed by rearranging the characters of the string.
+
+**Input format:**
+
+Each string consists of lowercase Latin letters and its length is at most 100000. The strings are given in separate lines.
+
+**Output format:**
+
+Print "YES" if one string is an anagram of another, otherwise print "NO".
+
+**Example**
+Input:
+
+dusty
+
+study
+
+Output:
+
+YES
+
+*All test cases passed.*
+
+*Time: 271ms*
+
+*Memory: 31.40 Mb*
+
+First, we define a function that takes 2 arrays of letters in each word. Then, we sort them. If 2 arrays are same, the function will return "Yes".
+In other cases it will return "NO".
+
+In input we separate each letter and append it in list. In output we print the function with our input words.
