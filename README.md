@@ -180,9 +180,13 @@ Print a single number, representing the side length of the maximum square filled
 Input:
 
 4 5
+
 0 0 0 1 0
+
 0 1 1 1 0
+
 0 0 1 1 0
+
 1 0 1 0 0
 
 Output:
@@ -197,9 +201,12 @@ Output:
 
 First, we create a matrix dp that will store the maximum side length of a square filled with carrots for each cell on the field.
 
-• Next, we fill the dp matrix as follows:
+Next, we fill the dp matrix as follows:
+
     * If a cell contains a carrot, its maximum side length is 1.
+    
     * If a cell does not contain a carrot, its maximum side length is 0.
+    
     * If a cell contains a carrot and its neighbors also contain carrots, its maximum side length is the minimum of its neighbors' maximum side lengths + 1.
 
 Finally, we find the maximum side length of a square in the dp matrix and output it. 🥕
