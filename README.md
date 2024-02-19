@@ -150,3 +150,56 @@ First, we define a function that takes 2 arrays of letters in each word. Then, w
 In other cases it will return "NO".
 
 In input we separate each letter and append it in list. In output we print the function with our input words.
+
+**Task G.The rabbit learns geometry**
+
+Time limit: 4 seconds
+
+Memory limit: 80Mb
+
+Input: standard input or input.txt
+
+Output: standard output or output.txt
+
+The curious rabbits love exploring geometry as they hop around the garden beds. Our rabbit is no exception. Today, it decided to study a new shape: a square.
+
+The rabbit dashes across a garden bed, which is a **grid of N × M cells**. Some of these cells contain carrots, while others do not.
+
+Let's assist our inquisitive rabbit in finding **the side length of the largest square** that can be completely filled with carrots.
+
+**Input format:**
+
+The first line contains two natural numbers, N and M (where 1 ≤ N, M ≤ 1000). Following that, there are N lines, each with M numbers separated by spaces. A number is 0 if there's no carrot in the cell, or 1 if there is a carrot.
+
+**Output format:**
+
+Print a single number, representing the side length of the maximum square filled with carrots.
+
+**Example**
+
+Input:
+
+4 5
+0 0 0 1 0
+0 1 1 1 0
+0 0 1 1 0
+1 0 1 0 0
+
+Output:
+
+2
+
+*All test cases passed.*
+
+*Time: 421ms*
+
+*Memory: 43.04 Mb*
+
+First, we create a matrix dp that will store the maximum side length of a square filled with carrots for each cell on the field.
+
+• Next, we fill the dp matrix as follows:
+    * If a cell contains a carrot, its maximum side length is 1.
+    * If a cell does not contain a carrot, its maximum side length is 0.
+    * If a cell contains a carrot and its neighbors also contain carrots, its maximum side length is the minimum of its neighbors' maximum side lengths + 1.
+
+Finally, we find the maximum side length of a square in the dp matrix and output it. 🥕
