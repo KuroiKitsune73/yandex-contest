@@ -3,6 +3,7 @@ Warm-up-2023
 
 **Task A.Not at least on the segment**
 
+```
 Time limit: 1 second
 
 Memory limit: 64Mb
@@ -10,7 +11,7 @@ Memory limit: 64Mb
 Input: standard input or input.txt
 
 Output: standard output or output.txt
-
+```
 
 A sequence of integers a1, a2, ..., an is given.
 Queries are defined: to report any element of the sequence in the range from L to R, **inclusive**,
@@ -70,6 +71,7 @@ If such an element does not exist, we output "NOT FOUND".
 
 **Task B.Add Two Fractions**
 
+```
 Time limit: 1 second
 
 Memory limit: 64Mb
@@ -77,6 +79,7 @@ Memory limit: 64Mb
 Input: standard input or input.txt
 
 Output: standard output or output.txt
+```
 
 Given two rational fractions: a/b and c/d. Add them and represent the result as an irreducible fraction m/n.
 
@@ -111,6 +114,7 @@ We then call the add_fractions function, and the resulting numerator and denomin
 
 **Task D.Anagrams?**
 
+```
 Time limit: 1 second
 
 Memory limit: 64Mb
@@ -118,6 +122,7 @@ Memory limit: 64Mb
 Input: standard input or input.txt
 
 Output: standard output or output.txt
+```
 
 Given two strings, check if one string is an anagram of another. An anagram of a string is formed by rearranging the characters of the string.
 
@@ -153,6 +158,7 @@ In input we separate each letter and append it in list. In output we print the f
 
 **Task G.The rabbit learns geometry**
 
+```
 Time limit: 4 seconds
 
 Memory limit: 80Mb
@@ -160,6 +166,7 @@ Memory limit: 80Mb
 Input: standard input or input.txt
 
 Output: standard output or output.txt
+```
 
 The curious rabbits love exploring geometry as they hop around the garden beds. Our rabbit is no exception. Today, it decided to study a new shape: a square.
 
@@ -203,10 +210,10 @@ First, we create a matrix dp that will store the maximum side length of a square
 
 Next, we fill the dp matrix as follows:
 
-    * If a cell contains a carrot, its maximum side length is 1.
+* If a cell contains a carrot, its maximum side length is 1.
     
-    * If a cell does not contain a carrot, its maximum side length is 0.
+* If a cell does not contain a carrot, its maximum side length is 0.
     
-    * If a cell contains a carrot and its neighbors also contain carrots, its maximum side length is the minimum of its neighbors' maximum side lengths + 1.
+* If a cell contains a carrot and its neighbors also contain carrots, its maximum side length is the minimum of its neighbors' maximum side lengths + 1.
 
 Finally, we find the maximum side length of a square in the dp matrix and output it. 🥕
