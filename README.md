@@ -217,3 +217,43 @@ Next, we fill the dp matrix as follows:
 * If a cell contains a carrot and its neighbors also contain carrots, its maximum side length is the minimum of its neighbors' maximum side lengths + 1.
 
 Finally, we find the maximum side length of a square in the dp matrix and output it. 🥕
+
+**Task I.Correct bracket sequence**
+
+```
+Time limit: 1 second
+
+Memory limit: 64Mb
+
+Input: standard input or input.txt
+
+Output: standard output or output.txt
+```
+
+Consider a sequence consisting of round, square and curly brackets. The program should determine whether a given bracket sequence is correct. An empty sequence is correct. If A is correct, then the sequences (A), [[A]], {A} are correct. If A and B are correct sequences, then the sequence AB is correct.
+
+**Input format:**
+
+A bracket sequence containing no more than 100000 brackets is written in a single line.
+
+**Output format:**
+
+If the given sequence is correct, the program should print the string "yes", otherwise the string "no".
+
+**Example**
+
+Input:
+
+()[]
+
+Output:
+
+yes
+
+*All test cases passed.*
+
+*Time: 222ms*
+
+*Memory: 28.32 Mb*
+
+To solve this problem, you can use a stack. Iterate over each character in the sequence. If the character is an opening bracket, push it onto the stack. If the character is a closing bracket, check if it matches the last opening bracket on the stack. If so, pop that bracket off the stack. At the end, check if the stack is empty. If it is, the sequence is correct, otherwise it is incorrect.
